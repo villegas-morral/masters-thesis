@@ -40,14 +40,6 @@ julia> add DifferentialEquations, Distributions, Random, GLMakie, Printf, Dates,
 ```
 Note that IJulia is only necessary to run the notebooks in Jupyter notebooks. You can use [JupyterLab](https://jupyter.org/install). Another option is to use VS Code along with the Julia extension.
 
-## Examples
+## Poster
 
-Formation of an aggregate:
-
-![](https://github.com/villegas-morral/masters-thesis/blob/d086ff95580073c4d3a6a28fdd8cde3903875bc3/figures/400-example-program/400-aggregate-formation.png)
-
-Differentiation of an aggregate while it proliferates:
-
-![](https://github.com/villegas-morral/masters-thesis/blob/d086ff95580073c4d3a6a28fdd8cde3903875bc3/figures/411-diff-adhesion-growing/411-aggregate-afaster-all.png)
-
-![](https://github.com/villegas-morral/masters-thesis/blob/d086ff95580073c4d3a6a28fdd8cde3903875bc3/figures/411-diff-adhesion-growing/411-aggregate-afaster-b.png)
+![](https://github.com/villegas-morral/masters-thesis/blob/32d0328179b177d002a13ca9b95dc8056baab971/report/poster.jpg)
