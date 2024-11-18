@@ -242,5 +242,5 @@ Note that IJulia is only necessary to run the notebooks in Jupyter notebooks. Yo
 
 Poster created for the 2024 Collaboratorium Annual Symposium ("Modelling Biology Across Scales").
 
-![](https://github.com/villegas-morral/masters-thesis/blob/c04ff3afe017685bd949236bcdd6668a51bc4619/report/poster.jpg)
+![](https://github.com/villegas-morral/masters-thesis/blob/8dbea89e4a42cd2ccac1217c60c709071442d671/report/poster.jpg)
 
