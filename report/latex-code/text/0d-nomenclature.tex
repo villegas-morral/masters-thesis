@@ -1,0 +1,80 @@
+\chapter*{Nomenclature}\label{ch:nomenclature}
+\addcontentsline{toc}{chapter}{Nomenclature}
+\markboth{Nomenclature}{}
+
+
+This section serves as a reference for the notation used throughout the text. Quantities are presented only in their dimensionless form, denoted with a $\sim$. Physical values can be recovered using the methods presented in Section \ref{sec:nondimensionalization}.
+\vspace{1em}
+
+\renewcommand{\arraystretch}{1.2}
+
+% this was done using nomenclature.ods
+
+{\small                                 % smaller font size for the table
+\begin{xltabular}{\textwidth}{ 
+    >{\centering\arraybackslash}p{0.12\textwidth}   % first column: 12% of text width
+    >{\centering\arraybackslash}p{0.2\textwidth}
+    X                                               % third column: take up the remaining space
+    >{\centering\arraybackslash}p{0.11\textwidth}   % fourth column: 11% of text width
+}
+    \hline
+    \textbf{Symbol} & \textbf{Code} & \multicolumn{1}{c}{\textbf{Description}} & \textbf{Value} \\      % header
+    \hline
+        $T_0$ & \code{t0} & Typical time scale & \SI{2}{\hour} \\
+        $R_0$ & \code{r0} & Typical length scale & \SI{5}{\micro\meter} \\
+        $F_0$ & \code{f0} & Typical force scale & \SI{20}{\pico\newton} \\
+        $\tilde t$ & \code{t} & Simulation time &  \\
+        $\Delta \tilde t$ & \code{dt} & Timestep & 0.002 \\
+        $N$ & \code{N} & Total number of cells &  \\
+        $\tilde r$ & \code{r} & Radius & 1 \\
+        $\alpha_\text{ov}$ & \code{olap} & Overlap factor & 0.75 \\
+        $\tilde t_{\text{div}}$ & \code{t\_div} & Division time &  \\
+        $\tilde \tau_\text{div}$ & \code{tau\_div} & Average division time & 5--10 \\
+         & \code{x\_div,y\_div, z\_div} & Division axis vector &  \\
+        $\tilde \sigma_\text{div}$ & \code{sigma\_div} & Division time variability & 0.5 \\
+        $\text{U}(a,b)$ & \code{} & Uniform distribution &  \\
+         & \code{d\_on} & Differentiation trigger &  \\
+         & \code{g\_on} & Growth trigger &  \\
+        $m$ & \code{} & Mass &  \\
+        $\tilde x\in\R^3$ & \code{x,y,z} & Position &  \\
+        $\tilde v\in\R^3$ & \code{vx,vy,vz} & Velocity &  \\
+        $\tilde \lambda$ & \code{lambda} & Global friction coefficient & 1 \\
+        $\tilde \Lambda$ & \code{lambda} & Variable fiction coefficient & 0.1 \\
+        $\tilde F_i\in\R^3$ & \code{fx,fy,fz} & Sum of passive forces &  \\
+        $\tilde F_{ij}\in\R^3$ & \code{} & Force exerted by cell $j$ over cell $i$ &  \\
+        $\tilde d_{ij}$ & \code{d\_ij} & Euclidean distance  between cells $i$ and $j$ &  \\
+        $\alpha_\text{nb}$ & \code{range} & Neighbour range factor & 1.2 \\
+        $\mu$ & \code{mu} & Force range factor & 2 \\
+        $n_i$ & \code{ni} & Number of neighbours &  \\
+         & \code{ni\_a} & Number of neighbours in state $A$ &  \\
+        $U_i$ & \code{} & Set of neighbours &  \\
+        $\alpha_\text{adh}$ & \code{f\_adh} & Adhesion factor & 1 \\
+        $\alpha_\text{rep}$ & \code{rep} & Repulsion factor & 2.5 \\
+        $\tilde F_p\in\R^3$ & \code{fpx,fpy, fpz} & Protrusion force vector &  \\
+        $\tilde D$ & \code{fp} & Protrusion strength & 10 \\
+        $P_i$ & \code{} & Protrusion factor &  \\
+         & \code{marked} & Protrusion marker &  \\
+        $\tilde t_{ij}$ & \code{t\_paired} & Protrusion time & 10 \\
+        $\tilde k_{p_\text{on}}$ & \code{k\_{p\_\text{on}}} & Protrusion activation rate & 20 \\
+        $\tilde k_{p_\text{off}}$ & \code{k\_{p\_\text{off}}} & Protrusion deactivation rate & 10 \\
+        $A,B,C$ & \code{1,2,3} & Cell states &  \\
+        $\text{state}(i)$ & \code{cell\_state} & State of the cell &  \\
+        $\mathds{1}_X(i)$ & \code{} & State indicator function &  \\
+        $\phi_X$ & \code{phi\_x} & Proportion of cells in state $X$ &  \\
+        $\phi_B(0)$ & \code{b} & Initial proportion of cells in state $B$ & 0.2 \\
+        $\langle\mathds{1}_X(i)\rangle$ & \code{} & Proportion of neighbours in state $X$ &  \\
+        $\tilde r_{X\rightarrow Y}$ & \code{r\_ab,r\_bc} & Transition rate from $X$ to $Y$ &  \\
+        $\tilde p$ & \code{p} & Fixed transition rate from $A$ to $B$ & 0.25 \\
+        $\tilde q$ & \code{q} & Fixed transition rate from $B$ to $C$ & 0.5$\tilde p$ \\
+        $K$ & \code{k} & Inhibition factor & 4.76 \\
+        $d_2(t_n)$ & \code{msd} & Mean square displacement &  \\
+        $g_2(t_n)$ & \code{} & Mean square displacement step &  \\
+    \hline
+\end{xltabular}
+}
+
+
+
+
+
+

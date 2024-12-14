@@ -1,0 +1,66 @@
+% PDF output (no extra blank pages, equal margins)
+\documentclass[a4paper,12pt,openright]{report}
+% Two-sided printing binding (extra blank pages in order to start chapters on the right)
+% This option requires uncommenting the selected lines in this document
+% \documentclass[a4paper,twoside,12pt,openright]{report}
+
+\input{preamble/packages}
+\input{preamble/macros}
+\addbibresource{preamble/references.bib}
+
+% \hypersetup{                            % uncomment to print
+%     colorlinks = true,
+%     % filecolor = magenta,
+%     % linkcolor = NavyBlue,
+%     linkcolor= black,
+%     urlcolor = blue,
+%     citecolor = NavyBlue,
+% }
+
+\date{September 2024}
+
+\begin{document}
+
+% \shipout\null         % to include uncounted blank pages
+
+\pagenumbering{roman}
+\singlespacing
+
+% printed version assumes this to be disabled:
+% \includepdf{preamble/cover.pdf}   % to include the UPC pdf cover
+\include{text/0a-cover}
+
+% \thispagestyle{empty}\null              % uncomment to print
+\include{text/0b-acknowledgements}
+% \thispagestyle{empty}\null              % uncomment to print
+\include{text/0c-abstract}
+
+\setstretch{1.2}
+
+% \thispagestyle{empty}\null              % uncomment to print
+\tableofcontents
+\newpage
+
+% \thispagestyle{empty}\null\newpage      % uncomment to print
+% \thispagestyle{empty}\null\newpage      % uncomment to print
+
+\pagenumbering{arabic} 
+\setcounter{page}{1}
+
+\include{text/0d-nomenclature}
+
+% \thispagestyle{empty}\null\newpage      % uncomment to print
+% \thispagestyle{empty}\null\newpage      % uncomment to print
+
+\include{text/1-introduction}
+\include{text/2-chapter}
+\include{text/3-chapter}
+\include{text/4-chapter}
+\include{text/a-conclusions}
+\include{text/b-appendix}
+
+% \clearpage
+% \addcontentsline{toc}{chapter}{References}
+\printbibliography[title={References}, heading=bibintoc]
+
+\end{document}

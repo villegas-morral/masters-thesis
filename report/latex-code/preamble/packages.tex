@@ -1,0 +1,80 @@
+% PAGE CONFIGURATION
+
+\usepackage{parskip}                              % no indent
+\usepackage{setspace}                             % line spacing, we'll use \setstretch{1.2}
+\usepackage[a4paper, bottom=3cm]{geometry}        % margins
+\usepackage{fancyhdr}                             % head and foot
+    \pagestyle{fancy}                                 % set page to use it
+    \fancyhf{}                                        % fancyhdr setup
+    \fancyhead[L]{{\scshape\nouppercase\leftmark}}    % small caps chapter name in the header
+    \fancyhead[R]{\thepage}                           % page number top right
+    % \fancyfoot[C]{\emph{DRAFT Printed on \today}}     % foot
+    \renewcommand{\headrulewidth}{0.4pt}              % header line
+    \setlength{\headheight}{14.5pt}                   % header setup
+
+
+% BIBLIOGRAPHY
+
+\usepackage[backend=biber, style=authoryear]{biblatex}    % biblatex instead of bibtex
+% \newcommand*{\bibtitle}{References}
+    \renewcommand*{\bibfont}{\raggedright\small}              % smaller and left-aligned
+
+
+% TEXT
+
+\usepackage[T1]{fontenc}                        % letters such as ç, ò, etc
+% \usepackage{mlmodern}                           % thicker computer modern font
+\usepackage{mathpazo}                           % change font to palatino
+\usepackage{mathtools,amsmath,amssymb,amsthm}   % math symbols, and theorems
+\usepackage{dsfont}                             % indicator function
+\usepackage{siunitx}                            % writing units (15 h, 10 kg, etc)
+
+
+% TEXT FORMATTING
+
+\usepackage[scaled]{helvet}                       % font for titles
+% \setcounter{secnumdepth}{n}                       % no numbers in {n*sub}sections
+% \numberwithin{equation}{chapter}                  % equation numbering
+\usepackage{sectsty}                              % custimise section fonts
+    \allsectionsfont{\sffamily}                       % set font for all sections
+\usepackage[dvipsnames]{xcolor}                   % colors for the hyperlinks
+% \definecolor{purplecite}{RGB}{202, 97, 228}         % define new color
+\usepackage{enumitem}                             % fancy enumerate: nested lists and more
+\usepackage{pifont}                               % extra bullet poins
+    \renewcommand{\labelitemi}{\ding{109}}            % change default itemize
+\usepackage{hyperref}                             % clickable hyperlinks
+    \hypersetup{                                      % colored hyperlinks
+        colorlinks = true,
+        % filecolor = magenta,
+        linkcolor = NavyBlue,
+        % linkcolor= black,
+        urlcolor = blue,
+        citecolor = JungleGreen,
+    }
+
+
+% FIGURES
+
+\usepackage{graphicx}                                         % include figures
+\usepackage{pdfpages}                                         % insert pdf page \includepdf{}
+\usepackage{pgfplots}                                         % plotting directly to latex
+    \pgfplotsset{compat=1.18}                                     % compatibility settings for pgfplots
+\usepackage{xltabular}                                        % long table with adaptative widths
+\usepackage{subcaption}                                       % subfigures
+\usepackage[format=plain,justification=centering]{caption}    % custom captions
+    \captionsetup{font=small}                                     % caption package setup
+
+
+% DRAFT
+
+% \usepackage{lipsum}                                     % lorem ipsum
+% \usepackage[color=pink]{todonotes}                      % to-do notes \todo{}
+%     \setlength{\marginparwidth}{2.3cm}                      % set margin for the notes
+%     \newcommand{\tocite}[1]{\todo[color=yellow]{#1}}        % custom to-do environment
+% \usepackage{tcolorbox}                                  % create boxes
+%     \newtcolorbox{redbox}{                                  % red box environment \begin{redbox}
+%       colframe=red!50,
+%       colback=red!10,
+%       boxrule=0.3mm,
+%       arc=0mm
+%     }
