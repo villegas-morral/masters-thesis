@@ -107,9 +107,9 @@ julia +1.9
 
 Add CellBasedModels.jl and the packages used across the code
 ```julia-repl
-julia> using Pkg
-julia> add CellBasedModels
-julia> add DifferentialEquations, Distributions, Random, GLMakie, Printf, Dates, Glob, NBInclude, MathTeXEngine, IJulia
+julia> ]
+(@v1.9) pkg> add CellBasedModels
+(@v1.9) pkg> add DifferentialEquations, Distributions, Random, GLMakie, Printf, Dates, Glob, NBInclude, MathTeXEngine, IJulia
 ```
 Note that IJulia is only necessary to run the notebooks in Jupyter notebooks. You can use [JupyterLab](https://jupyter.org/install). Another option is to use VS Code along with the Julia extension.
 
